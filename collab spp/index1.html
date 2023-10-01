@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- fonts -->
+  <link rel="icon" href="img/nav-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500;1,700&family=Poppins:ital,wght@0,300;0,800;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- feather icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="style/lnd.css" />
+  <title>Gaijin Academy</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo"><img src="img/nav-logo-land.png" alt="Gaijin"> <text class="text-nav">aijin <span>Academy</span>.</text></a>
+
+    <div class="navbar-nav">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#">Contact Us</a>
+      <button class="btn" id="login">Login</button>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- hero section start -->
+  <section class="hero" id="home">
+    <main class="content reveal">
+      <h1>Welcome to Gaijin School <span>Tuition Pay</span>.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <button id="cta" class="cta" onclick="cta()" >Payment</button>
+    </main>
+  </section>
+  <!-- hero section end -->
+
+  <!-- Popup Start -->
+    <div class="popup-card">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <form action="php/login.php" method="post">
+          <h2>Sign In</h2>
+          <div class="form-element">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Your Username......" name="username" autocomplete="autocomplete" required>
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Your Password......" name="password" required>
+          </div>
+          <div class="form-element">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">remember me</label>
+          </div>
+          <div class="form-element">
+            <input type="submit" name="Login" value="Submit">
+          </div>
+          <div class="form-element">
+            <a href="#">Forgot Password</a>
+          </div>
+        </form>
+      </div>
+    </div>
+<!-- Popup End -->
+
+
+  <!-- About Section start-->
+  <section class="about reveal" id="about">
+    <h2><span>ABOUT</span> US</h2>
+
+    <div class="row">
+      <div class="about-img">
+        <img src="img/header&about (3).jpg" alt="Tentang Kami.png" />
+      </div>
+
+      <div class="content">
+        <!-- <h3>My Profile</h3> -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+          molestias natus commodi cumque ducimus sequi impedit eos provident
+          quod accusantium laborum doloremque delectus asperiores, nam optio.
+          Repudiandae at incidunt expedita..
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          assumenda consequuntur hic inventore soluta vero. Quidem aliquid,
+          laudantium ad suscipit placeat nam similique itaque sequi doloribus
+          doloremque earum delectus maiores ipsa id dolorem cumque tempora ab
+          vitae repellendus, illum odit.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end-->
+  
+  <!-- Contact section start -->
+  <footer class="footer" id="contact">
+    <div class="socials">
+      <a href="https://wa.me/6283852436661"><i data-feather="phone"></i></a>
+      <a href="https://www.instagram.com/invites/contact/?i=16zfnwri6qsid&utm_content=n1y70nn"><i
+        data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="mail"></i></a>
+      <a href="#"><i data-feather="linkedin"></i></a>
+      <br>
+      <p>
+        Gaijin <span>Pay</span>.co
+      </p>
+    </div>
+
+    <div class="credit">
+      <p>
+        Created by <a href="">Xie<span>Huxein.</span></a> | &copy; 2023.
+      </p>
+    </div>
+  </footer>
+  <!-- Contact section end -->
+
+  <!-- feather icons -->
+  <script>
+    feather.replace();
+  </script>
+  <!-- feather icons end -->
+  
+  <!-- My Script Jawa start -->
+  <script src="js/animate.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/hamburger.js"></script>
+  <!-- My Script Jawa end -->
+</body>
+</html>
